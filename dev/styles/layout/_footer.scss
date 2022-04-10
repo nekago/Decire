@@ -1,0 +1,38 @@
+
+.footer{
+  &__content{
+    padding: 60px 0 80px;
+    background-color: #DFDFDF;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info{
+    width: 540px;
+  }
+  &__info-title{
+    margin-bottom: 14px;
+    line-height: 23px;
+    @extend %title-font;
+    color: $title;
+}
+  &__info-text{
+    max-width: 475px;
+    margin-bottom: 16px;
+  }
+  &__info-email{
+    display: inline-block;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $title;
+  }
+  &__copyright{
+    padding: 42px 0 41px;
+    text-align: center;
+    background-color: $title;
+    color: #A1A1A1;
+  }
+}
