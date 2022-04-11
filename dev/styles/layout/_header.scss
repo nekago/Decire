@@ -40,10 +40,11 @@
   top: 0;
   bottom: 0;
   padding-top: 40px;
-  transition: 0.5s;
+  transition: all .6s;
   background-color: #fff;
+  box-shadow: -2px 3px 17px 0px #000;
   &.rightside-menu--close{
-    transform: translateX(1000%);
+    transform: translateX(500%);
   }
   &__close{
     margin-left: 50px;
@@ -63,10 +64,24 @@
     margin-bottom: 40px;
   }
   &__title{
+    position: relative;
+    margin-bottom: 17px;
+    padding-bottom: 17px;
     @extend %title-font;
     font-size: 36px;
     line-height: 51px;
     color: $title;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 252px;
+      height: 1px;
+      margin: 0 auto;
+      background: #6D7278;
+    }
   }
   &__text{
     margin-bottom: 75px;
