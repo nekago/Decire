@@ -161,6 +161,27 @@ body {
   padding: 0 15px;
 }
 
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-dots li {
+  margin: 0 15px;
+}
+.slick-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #363838;
+}
+.slick-dots li.slick-active button {
+  background-color: #FFEF35;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -200,11 +221,12 @@ body {
   top: 0;
   bottom: 0;
   padding-top: 40px;
-  transition: 0.5s;
+  transition: all 0.6s;
   background-color: #fff;
+  box-shadow: -2px 3px 17px 0px #000;
 }
 .rightside-menu.rightside-menu--close {
-  transform: translateX(1000%);
+  transform: translateX(500%);
 }
 .rightside-menu__close {
   margin-left: 50px;
@@ -224,9 +246,23 @@ body {
   margin-bottom: 40px;
 }
 .rightside-menu__title {
+  position: relative;
+  margin-bottom: 17px;
+  padding-bottom: 17px;
   font-size: 36px;
   line-height: 51px;
   color: #363838;
+}
+.rightside-menu__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 252px;
+  height: 1px;
+  margin: 0 auto;
+  background: #6D7278;
 }
 .rightside-menu__text {
   margin-bottom: 75px;
@@ -358,5 +394,54 @@ body {
   text-align: center;
   background-color: #363838;
   color: #A1A1A1;
+}
+
+.top__inner {
+  padding-bottom: 70px;
+  position: relative;
+}
+.top__inner::after {
+  content: "";
+  background-image: url("../../img/slider-bg.jpg");
+  position: absolute;
+  width: 100%;
+  height: 722px;
+  top: 0;
+  z-index: -1;
+}
+.top__slider-item {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.top__slider-img {
+  max-width: 703px;
+  height: 815px;
+  margin-left: -14%;
+  object-fit: cover;
+}
+.top__slider-info {
+  max-width: 645px;
+  margin-left: 25px;
+}
+.top__slider-title {
+  position: relative;
+  font-size: 110px;
+  line-height: 135px;
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+  color: #363838;
+}
+.top__slider-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 185px;
+  height: 1px;
+  background: #6D7278;
+}
+.top__slider-text {
+  max-width: 585px;
 }
 /*# sourceMappingURL=main.css.map */

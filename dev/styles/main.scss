@@ -12,11 +12,13 @@
   'base/base';
 
 @import
-  'components/button';
+  'components/button',
+  'components/slick-dots';
 
 @import
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/main-page';
 
 @import
   'pages/home';
