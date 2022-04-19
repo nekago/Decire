@@ -1,7 +1,4 @@
 
-
-
-
 //functional rightSideMenu
 const headerButton = document.querySelector('.header__btn'),
       rightSideMenu = document.querySelector('.rightside-menu'),
@@ -28,4 +25,6 @@ $('.top__slider').slick({
     fade: true,
     autoPlay: true
 })
+
+
 

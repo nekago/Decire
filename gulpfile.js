@@ -77,7 +77,7 @@ let compileCSSForProd = () => {
 };
 
 let transpileJSForDev = () => {
-    return src(`dev/scripts/*.js`)
+    return src(                `dev/scripts/*.js`)
         .pipe(sourcemaps.init())
         .pipe(babel())
         .pipe(sourcemaps.write('./'))
