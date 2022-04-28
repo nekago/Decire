@@ -13,15 +13,17 @@
 
 @import
   'components/button',
-  'components/slick-dots';
+  'components/slick-dots',
+  'components/breadcrumbs';
 
 @import
   'layout/header',
-  'layout/footer',
-  'layout/main-page';
+  'layout/footer';
+
 
 @import
-  'pages/home';
+  'pages/main-page',
+  'pages/about';
 
 @import
   'themes/default';

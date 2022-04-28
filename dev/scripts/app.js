@@ -1,4 +1,10 @@
 
+const showAboutActive = document.querySelector('.menu__list-link')
+
+showAboutActive.addEventListener('click', (event) => {
+    showAboutActive.classList.add('menu__list-link--active')
+})
+
 //functional rightSideMenu
 const headerButton = document.querySelector('.header__btn'),
       rightSideMenu = document.querySelector('.rightside-menu'),

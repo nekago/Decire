@@ -1,6 +1,10 @@
 "use strict";
 
-//functional rightSideMenu
+var showAboutActive = document.querySelector('.menu__list-link');
+showAboutActive.addEventListener('click', function (event) {
+  showAboutActive.classList.add('menu__list-link--active');
+}); //functional rightSideMenu
+
 var headerButton = document.querySelector('.header__btn'),
     rightSideMenu = document.querySelector('.rightside-menu'),
     rightSideMenuButtonClose = document.querySelector('.rightside-menu__close');
